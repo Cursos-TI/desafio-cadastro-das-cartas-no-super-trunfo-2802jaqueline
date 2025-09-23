@@ -11,6 +11,8 @@ int main(){
           float Área_1 = 27.768;
           float PIB_1 = 760.077;
           int PontosTuristicos_1 = 14;
+          float densidadepopulacional_1;
+          float PIBpercapita_1;
 
           char Estado_2[30] = "Acre";
           char Código_2[30] = "B02";
@@ -19,6 +21,8 @@ int main(){
           float Área_2 = 164.123;
           float PIB_2 = 173.300;
           int PontosTuristicos_2 = 8;
+          float densidadepopulacional_2;
+          float PIBpercapita_2;
 
           printf("Estado:\n ");
           scanf("%s", Estado_1);
@@ -76,7 +80,25 @@ int main(){
           printf("Área Total: %.3f - PIB: %.3f\n", Área_2, PIB_2);
           printf("Numeros de Pontos Turisticos: %d", PontosTuristicos_2);
 
+          printf("¨¨¨¨valor densidade populacional carta 1¨¨¨¨\n");
+          densidadepopulacional_1 = (float)(População_1 / Área_1);
+          printf("A densidade populacional da carta 1 é: %f\n", densidadepopulacional_1);
+
+          printf("¨¨¨¨PIB per Capita da carta 1¨¨¨¨\n");
+          PIBpercapita_1 = (float)(PIB_1 / População_1);
+          printf("O PIB per capita da carta 1 é: %f\n", PIBpercapita_1);
+
+          printf("¨¨¨¨valor densidade populacional carta 2¨¨¨¨\n");
+          densidadepopulacional_2 = (float)(População_2 / Área_2);
+          printf("A densidade populacional da carta 2 é: %f\n", densidadepopulacional_2);
+
+          printf("¨¨¨¨PIB per Capita da carta 2¨¨¨¨\n");
+          PIBpercapita_1 = (float)(PIB_2 / População_2);
+          printf("O PIB per capita da carta 2 é: %f\n", PIBpercapita_2);
+
+
+
           return 0;
-}
+        }
 
   
